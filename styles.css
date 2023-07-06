@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+#root {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* Below 3 centers the image horizontally and vertically withing the '#root' container */
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background-image: url('images/new-sunny-pic.jpg');
+    background-size: cover;  /*scales the image to cover the entire background area*/
+    background-position: center center; /* centers the image both horizontally and vertically */
+    background-repeat: no-repeat; /* ensures the image is not repeated */
+}
+
+.display > p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+#weather-data{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    bottom: -50vh;
+    left: 5vw;
+}
+#weather-data h1{
+    color: white;
+    font-size: 8rem;
+    padding: 0 2vh;
+}
+
+.city{
+    padding: 2vh 2vh 0 1.5vh;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.date{
+    padding: 0 1vh 0 2vh;
+    margin: 0;
+}
+
+.status p{
+    color: white;
+    font-size: 1.3rem;
+}
+.search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    padding: 5vh;
+}
+.search input{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+.search hr, .city, .date{
+    color: white;
+}
+
+.search ul{
+    color: grey;
+}
+
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+li{
+    line-height: 7vh;
+}
+
+.search p{
+    color: white;
+    font-size: 1.5rem;
+}
