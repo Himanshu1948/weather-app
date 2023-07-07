@@ -1,0 +1,23 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "This is weather-app project which is based on the OpenWeatherMap API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Himanshu1948/weather-app.git"
+  },
+  "author": "Himnashu Balurkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Himanshu1948/weather-app/issues"
+  },
+  "homepage": "https://github.com/Himanshu1948/weather-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
