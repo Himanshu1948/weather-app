@@ -15,7 +15,7 @@
         <div class="display">
             <p>Weather.Hub</p>
             <div id="weather-data">
-                <h1><span>26°</span></h1>
+                <h1 id="temp"><span>26°</span></h1>
                 <div class="location-info">
                     <p class="city"><span>London</span></p>
                     <p class="date"><span>10:36 - Tuesday, 22 Oct '19</span></p>
@@ -29,7 +29,8 @@
         </div>
         <div class="search">
             <form>
-                <input type="text" placeholder="Search">
+                <input name="cityIn" type="text" placeholder="Search">
+                <input type="submit" onclick=handleClick()>
             </form>
             <hr>
             <ul>
@@ -46,6 +47,7 @@
 <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="server.js"></script>
+    <script src="../server.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>
