@@ -15,10 +15,10 @@
     <div class="display">
         <p>Weather.Hub</p>
         <div id="weather-data">
-            <h1 id="temp"><span><%= ejs_temp %>°</span></h1>
+            <h1 id="temp"><span><%= temp %>°</span></h1>
             <div class="location-info">
-                <p class="city"><span>London</span></p>
-                <p class="date"><span><%= ejs_hours %> : <%= ejs_minutes %> - <%= ejs_day %>, <%= ejs_date %> <%= ejs_month %> '<%= ejs_year %></span></p>
+                <p class="city"><span><%= city %></span></p>
+                <p class="date"><span><%= hours %> : <%= minutes %> - <%= day %>, <%= date %> <%= month %> '<%= year %></span></p>
             </div>
             <!--This div is used for displaying some weather icons from the OpenWeatherMap-->
 <!--            <div class="status">-->
@@ -29,7 +29,7 @@
     </div>
 
     <div class="search">
-        <form action="list.ejs" method="post">
+        <form action="/" method="post">
             <input name="cityIn" type="text" placeholder="Search" required>
             <input type="submit" placeholder="search">
         </form>
@@ -43,10 +43,18 @@
         <hr>
         <p>Weather Details</p>
         <ul>
-            <li>Cloudy</li>
+            <li>Description</li>
             <li>Humidity</li>
             <li>Wind</li>
-            <li>Rain</li>
+            <li>Visibility</li>
+            <li>Cloudiness</li>
+        </ul>
+        <ul class="side">
+            <li><%= description %></li>
+            <li><%= humidity %> %</li>
+            <li><%= wind %> m/s</li>
+            <li><%= visibility %> km</li>
+            <li><%= cloudiness %> %</li>
         </ul>
     </div>
 </div>

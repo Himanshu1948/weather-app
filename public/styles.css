@@ -87,3 +87,9 @@ li{
     color: white;
     font-size: 1.5rem;
 }
+
+.side{
+    position: relative;
+    left: 25vw;
+    bottom: 37vh;
+}
